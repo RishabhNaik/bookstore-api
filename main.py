@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException
 from pymongo import MongoClient
 from bson import ObjectId
 
-mongo_client = MongoClient("mongodb+srv://rishabh:rishabh@cluster0.9d4xg.mongodb.net/test")
+mongo_client = MongoClient("localhost")
 db = mongo_client["Bookstore"]
 authors_collection = db["authors"]
 books_collection = db["books"]
